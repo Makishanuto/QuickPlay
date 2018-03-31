@@ -13,18 +13,18 @@
 		20375138206F45BB002CEF7D /* QuickPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */; };
 		2037513A206F45BB002CEF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20375139206F45BB002CEF7D /* Assets.xcassets */; };
 		2037513D206F45BC002CEF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2037513B206F45BC002CEF7D /* LaunchScreen.storyboard */; };
-		20375149206F4849002CEF7D /* NierProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 20375145206F4849002CEF7D /* NierProfile.png */; };
-		2037514A206F4849002CEF7D /* NierQueue.png in Resources */ = {isa = PBXBuildFile; fileRef = 20375146206F4849002CEF7D /* NierQueue.png */; };
-		2037514B206F4849002CEF7D /* NierMaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 20375147206F4849002CEF7D /* NierMaps.png */; };
 		2037514C206F4849002CEF7D /* NierSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 20375148206F4849002CEF7D /* NierSelect.png */; };
 		2037514E206F4A9D002CEF7D /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037514D206F4A9D002CEF7D /* MapScreenViewController.swift */; };
 		20375150206F4ABA002CEF7D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037514F206F4ABA002CEF7D /* ProfileViewController.swift */; };
 		20375153206F4AEE002CEF7D /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20375152206F4AEE002CEF7D /* SelectViewController.swift */; };
 		20375155206F4AF7002CEF7D /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20375154206F4AF7002CEF7D /* QueueViewController.swift */; };
-		2037515C206F4C48002CEF7D /* SCE-PS3-RD-B-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2037515A206F4C09002CEF7D /* SCE-PS3-RD-B-LATIN.TTF */; };
-		2037515D206F4C48002CEF7D /* SCE-PS3-RD-BI-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 20375159206F4C09002CEF7D /* SCE-PS3-RD-BI-LATIN.TTF */; };
-		2037515E206F4C48002CEF7D /* SCE-PS3-RD-I-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 20375158206F4C08002CEF7D /* SCE-PS3-RD-I-LATIN.TTF */; };
-		2037515F206F4C48002CEF7D /* SCE-PS3-RD-R-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2037515B206F4C09002CEF7D /* SCE-PS3-RD-R-LATIN.TTF */; };
+		2048C6C8206F54E00073A447 /* NierProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6C5206F54E00073A447 /* NierProfile.png */; };
+		2048C6C9206F54E00073A447 /* NierQueue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6C6206F54E00073A447 /* NierQueue.png */; };
+		2048C6CA206F54E00073A447 /* NierMaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6C7206F54E00073A447 /* NierMaps.png */; };
+		2048C6CF206F55500073A447 /* SCE-PS3-RD-B-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */; };
+		2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */; };
+		2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */; };
+		2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +36,18 @@
 		20375139206F45BB002CEF7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2037513C206F45BC002CEF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2037513E206F45BC002CEF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20375145206F4849002CEF7D /* NierProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierProfile.png; path = ../../../Phase1Assets/NierProfile.png; sourceTree = "<group>"; };
-		20375146206F4849002CEF7D /* NierQueue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierQueue.png; path = ../../../Phase1Assets/NierQueue.png; sourceTree = "<group>"; };
-		20375147206F4849002CEF7D /* NierMaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierMaps.png; path = ../../../Phase1Assets/NierMaps.png; sourceTree = "<group>"; };
 		20375148206F4849002CEF7D /* NierSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NierSelect.png; sourceTree = "<group>"; };
 		2037514D206F4A9D002CEF7D /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
 		2037514F206F4ABA002CEF7D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		20375152206F4AEE002CEF7D /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		20375154206F4AF7002CEF7D /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
-		20375158206F4C08002CEF7D /* SCE-PS3-RD-I-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SCE-PS3-RD-I-LATIN.TTF"; path = "../../../../Phase1Assets/SCE-PS3-RD-I-LATIN.TTF"; sourceTree = "<group>"; };
-		20375159206F4C09002CEF7D /* SCE-PS3-RD-BI-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SCE-PS3-RD-BI-LATIN.TTF"; path = "../../../../Phase1Assets/SCE-PS3-RD-BI-LATIN.TTF"; sourceTree = "<group>"; };
-		2037515A206F4C09002CEF7D /* SCE-PS3-RD-B-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SCE-PS3-RD-B-LATIN.TTF"; path = "../../../../Phase1Assets/SCE-PS3-RD-B-LATIN.TTF"; sourceTree = "<group>"; };
-		2037515B206F4C09002CEF7D /* SCE-PS3-RD-R-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SCE-PS3-RD-R-LATIN.TTF"; path = "../../../../Phase1Assets/SCE-PS3-RD-R-LATIN.TTF"; sourceTree = "<group>"; };
+		2048C6C5206F54E00073A447 /* NierProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NierProfile.png; sourceTree = "<group>"; };
+		2048C6C6206F54E00073A447 /* NierQueue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NierQueue.png; sourceTree = "<group>"; };
+		2048C6C7206F54E00073A447 /* NierMaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NierMaps.png; sourceTree = "<group>"; };
+		2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-I-LATIN.TTF"; sourceTree = "<group>"; };
+		2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-R-LATIN.TTF"; sourceTree = "<group>"; };
+		2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-BI-LATIN.TTF"; sourceTree = "<group>"; };
+		2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-B-LATIN.TTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				20375148206F4849002CEF7D /* NierSelect.png */,
-				20375147206F4849002CEF7D /* NierMaps.png */,
-				20375145206F4849002CEF7D /* NierProfile.png */,
-				20375146206F4849002CEF7D /* NierQueue.png */,
+				2048C6C7206F54E00073A447 /* NierMaps.png */,
+				2048C6C5206F54E00073A447 /* NierProfile.png */,
+				2048C6C6206F54E00073A447 /* NierQueue.png */,
 			);
 			path = "Temporary Assets";
 			sourceTree = "<group>";
@@ -119,10 +119,10 @@
 		20375156206F4BAC002CEF7D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2037515A206F4C09002CEF7D /* SCE-PS3-RD-B-LATIN.TTF */,
-				20375159206F4C09002CEF7D /* SCE-PS3-RD-BI-LATIN.TTF */,
-				20375158206F4C08002CEF7D /* SCE-PS3-RD-I-LATIN.TTF */,
-				2037515B206F4C09002CEF7D /* SCE-PS3-RD-R-LATIN.TTF */,
+				2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */,
+				2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */,
+				2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */,
+				2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -195,16 +195,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2037513D206F45BC002CEF7D /* LaunchScreen.storyboard in Resources */,
-				20375149206F4849002CEF7D /* NierProfile.png in Resources */,
-				2037515E206F4C48002CEF7D /* SCE-PS3-RD-I-LATIN.TTF in Resources */,
-				2037514B206F4849002CEF7D /* NierMaps.png in Resources */,
-				2037514A206F4849002CEF7D /* NierQueue.png in Resources */,
-				2037515D206F4C48002CEF7D /* SCE-PS3-RD-BI-LATIN.TTF in Resources */,
-				2037515F206F4C48002CEF7D /* SCE-PS3-RD-R-LATIN.TTF in Resources */,
+				2048C6CA206F54E00073A447 /* NierMaps.png in Resources */,
+				2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */,
 				2037514C206F4849002CEF7D /* NierSelect.png in Resources */,
+				2048C6C8206F54E00073A447 /* NierProfile.png in Resources */,
+				2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */,
+				2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */,
 				2037513A206F45BB002CEF7D /* Assets.xcassets in Resources */,
+				2048C6C9206F54E00073A447 /* NierQueue.png in Resources */,
 				20375135206F45BB002CEF7D /* Main.storyboard in Resources */,
-				2037515C206F4C48002CEF7D /* SCE-PS3-RD-B-LATIN.TTF in Resources */,
+				2048C6CF206F55500073A447 /* SCE-PS3-RD-B-LATIN.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
