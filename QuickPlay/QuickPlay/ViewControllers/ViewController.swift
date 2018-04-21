@@ -5,7 +5,7 @@
 //  Created by Matthew on 3/30/18.
 //  Copyright © 2018 Matthew. All rights reserved.
 //
-
+import Firebase
 import UIKit
 
 class ViewController: UIViewController {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */; };
 		20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037512F206F45BB002CEF7D /* AppDelegate.swift */; };
 		20375132206F45BB002CEF7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20375131206F45BB002CEF7D /* ViewController.swift */; };
 		20375135206F45BB002CEF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20375133206F45BB002CEF7D /* Main.storyboard */; };
@@ -25,9 +26,11 @@
 		2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */; };
 		2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */; };
 		2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */; };
+		2BE341ED4DDDE00A74ADECA4 /* Pods_QuickPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QuickPlay/Assets/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2037512C206F45BB002CEF7D /* QuickPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2037512F206F45BB002CEF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20375131206F45BB002CEF7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-R-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-BI-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-B-LATIN.TTF"; sourceTree = "<group>"; };
+		B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.release.xcconfig"; sourceTree = "<group>"; };
+		DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE341ED4DDDE00A74ADECA4 /* Pods_QuickPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +73,8 @@
 			children = (
 				2037512E206F45BB002CEF7D /* QuickPlay */,
 				2037512D206F45BB002CEF7D /* Products */,
+				657B7147E39542292C724A2A /* Pods */,
+				291F9746D8703DD27340495C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,14 +89,10 @@
 		2037512E206F45BB002CEF7D /* QuickPlay */ = {
 			isa = PBXGroup;
 			children = (
-				20375144206F4833002CEF7D /* Temporary Assets */,
 				20375151206F4AC0002CEF7D /* ViewControllers */,
 				2037512F206F45BB002CEF7D /* AppDelegate.swift */,
 				20375133206F45BB002CEF7D /* Main.storyboard */,
-				20375139206F45BB002CEF7D /* Assets.xcassets */,
 				2037513B206F45BC002CEF7D /* LaunchScreen.storyboard */,
-				2037513E206F45BC002CEF7D /* Info.plist */,
-				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
 				20375157206F4BBA002CEF7D /* Assets */,
 			);
 			path = QuickPlay;
@@ -130,9 +135,31 @@
 		20375157206F4BBA002CEF7D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				20375144206F4833002CEF7D /* Temporary Assets */,
 				20375156206F4BAC002CEF7D /* Fonts */,
+				20375139206F45BB002CEF7D /* Assets.xcassets */,
+				2037513E206F45BC002CEF7D /* Info.plist */,
+				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
+				0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		291F9746D8703DD27340495C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		657B7147E39542292C724A2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */,
+				CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20375141206F45BC002CEF7D /* Build configuration list for PBXNativeTarget "QuickPlay" */;
 			buildPhases = (
+				F22E4AAF19861277EF1BDAEF /* [CP] Check Pods Manifest.lock */,
 				20375128206F45BB002CEF7D /* Sources */,
 				20375129206F45BB002CEF7D /* Frameworks */,
 				2037512A206F45BB002CEF7D /* Resources */,
+				92F15AA91C3EDE18A2795595 /* [CP] Embed Pods Frameworks */,
+				773FBC83432CC10FF38CB1FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +229,7 @@
 				2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */,
 				2037514C206F4849002CEF7D /* NierSelect.png in Resources */,
 				2048C6C8206F54E00073A447 /* NierProfile.png in Resources */,
+				0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */,
 				2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */,
 				2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */,
 				2037513A206F45BB002CEF7D /* Assets.xcassets in Resources */,
@@ -209,6 +240,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		773FBC83432CC10FF38CB1FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92F15AA91C3EDE18A2795595 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22E4AAF19861277EF1BDAEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20375128206F45BB002CEF7D /* Sources */ = {
@@ -356,6 +464,7 @@
 		};
 		20375142206F45BC002CEF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +479,7 @@
 		};
 		20375143206F45BC002CEF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
