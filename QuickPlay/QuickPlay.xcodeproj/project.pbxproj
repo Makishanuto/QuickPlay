@@ -26,6 +26,8 @@
 		2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */; };
 		2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */; };
 		2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */; };
+		20E81AF3208BECCB00C72A19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81AF2208BECCB00C72A19 /* LoginViewController.swift */; };
+		20E81AF5208BED4700C72A19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E81AF4208BED4700C72A19 /* Info.plist */; };
 		2BE341ED4DDDE00A74ADECA4 /* Pods_QuickPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,6 @@
 		20375137206F45BB002CEF7D /* QuickPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickPlay.xcdatamodel; sourceTree = "<group>"; };
 		20375139206F45BB002CEF7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2037513C206F45BC002CEF7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2037513E206F45BC002CEF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20375148206F4849002CEF7D /* NierSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NierSelect.png; sourceTree = "<group>"; };
 		2037514D206F4A9D002CEF7D /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
 		2037514F206F4ABA002CEF7D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-R-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-BI-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-B-LATIN.TTF"; sourceTree = "<group>"; };
+		20E81AF2208BECCB00C72A19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		20E81AF4208BED4700C72A19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.release.xcconfig"; sourceTree = "<group>"; };
 		DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,9 @@
 				2037512F206F45BB002CEF7D /* AppDelegate.swift */,
 				20375133206F45BB002CEF7D /* Main.storyboard */,
 				2037513B206F45BC002CEF7D /* LaunchScreen.storyboard */,
+				20E81AF4208BED4700C72A19 /* Info.plist */,
+				0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */,
+				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
 				20375157206F4BBA002CEF7D /* Assets */,
 			);
 			path = QuickPlay;
@@ -113,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				20375131206F45BB002CEF7D /* ViewController.swift */,
+				20E81AF2208BECCB00C72A19 /* LoginViewController.swift */,
 				2037514F206F4ABA002CEF7D /* ProfileViewController.swift */,
 				2037514D206F4A9D002CEF7D /* MapScreenViewController.swift */,
 				20375152206F4AEE002CEF7D /* SelectViewController.swift */,
@@ -138,9 +145,6 @@
 				20375144206F4833002CEF7D /* Temporary Assets */,
 				20375156206F4BAC002CEF7D /* Fonts */,
 				20375139206F45BB002CEF7D /* Assets.xcassets */,
-				2037513E206F45BC002CEF7D /* Info.plist */,
-				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
-				0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 				2048C6C9206F54E00073A447 /* NierQueue.png in Resources */,
 				20375135206F45BB002CEF7D /* Main.storyboard in Resources */,
 				2048C6CF206F55500073A447 /* SCE-PS3-RD-B-LATIN.TTF in Resources */,
+				20E81AF5208BED4700C72A19 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +258,10 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -261,7 +269,10 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -276,21 +287,41 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +358,7 @@
 				2037514E206F4A9D002CEF7D /* MapScreenViewController.swift in Sources */,
 				20375155206F4AF7002CEF7D /* QueueViewController.swift in Sources */,
 				20375150206F4ABA002CEF7D /* ProfileViewController.swift in Sources */,
+				20E81AF3208BECCB00C72A19 /* LoginViewController.swift in Sources */,
 				20375138206F45BB002CEF7D /* QuickPlay.xcdatamodeld in Sources */,
 				20375153206F4AEE002CEF7D /* SelectViewController.swift in Sources */,
 				20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */,

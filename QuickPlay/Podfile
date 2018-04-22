@@ -6,9 +6,8 @@ target 'QuickPlay' do
   use_frameworks!
   # Pods for QuickPlay
   pod 'Firebase/Core'
+  pod 'FirebaseUI'
   pod 'FirebaseUI/Auth'
-  pod 'FirebaseUI/Facebook'
-  pod 'FirebaseUI/Phone'
   pod 'FirebaseUI/Google'
-  
+
 end
