@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */; };
+		0F98FEB5208E10D4005EB347 /* GameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98FEB4208E10D4005EB347 /* GameTableCell.swift */; };
 		0FC6661D208C748F00F19AD9 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661C208C748F00F19AD9 /* userModel.swift */; };
 		0FC6661F208C758400F19AD9 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661E208C758400F19AD9 /* Games.swift */; };
 		20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037512F206F45BB002CEF7D /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QuickPlay/Assets/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0F98FEB4208E10D4005EB347 /* GameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableCell.swift; sourceTree = "<group>"; };
 		0FC6661C208C748F00F19AD9 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		0FC6661E208C758400F19AD9 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		2037512C206F45BB002CEF7D /* QuickPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 			children = (
 				209E655C208D4DE500ADBEB5 /* AddViewController.swift */,
 				209E655E208D4DF300ADBEB5 /* GameViewController.swift */,
+				0F98FEB4208E10D4005EB347 /* GameTableCell.swift */,
 			);
 			path = SelectTableControllers;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			files = (
 				209E6558208D4BA100ADBEB5 /* NameEdit.swift in Sources */,
 				209E6556208D4AD700ADBEB5 /* PIctureEdit.swift in Sources */,
+				0F98FEB5208E10D4005EB347 /* GameTableCell.swift in Sources */,
 				209E655D208D4DE500ADBEB5 /* AddViewController.swift in Sources */,
 				20375132206F45BB002CEF7D /* ViewController.swift in Sources */,
 				2037514E206F4A9D002CEF7D /* MapScreenViewController.swift in Sources */,

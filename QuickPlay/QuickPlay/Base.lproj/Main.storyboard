@@ -521,7 +521,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lSd-dS-wY7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lSd-dS-wY7" customClass="GameTableCell" customModule="QuickPlay" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="336" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lSd-dS-wY7" id="rQ1-Wv-SnF">
@@ -538,7 +538,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1cd-Ih-gaF" kind="presentation" id="Yry-nH-jlq"/>
+                                            <outlet property="gameNameLabel" destination="S2m-LQ-B9F" id="oye-7f-12X"/>
+                                            <segue destination="1cd-Ih-gaF" kind="presentation" identifier="gameView" id="Yry-nH-jlq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -572,6 +573,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RST-qq-Dlk"/>
                     </view>
+                    <connections>
+                        <outlet property="gameTable" destination="aTJ-hq-FWq" id="Izz-eK-ToU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSz-wW-h4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -678,9 +682,9 @@
         <image name="NierSelect.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O0Q-BQ-6Le"/>
+        <segue reference="cws-mF-jV3"/>
         <segue reference="GnS-p3-oZ4"/>
-        <segue reference="7PM-R5-cfm"/>
-        <segue reference="ewC-aN-pVR"/>
+        <segue reference="xU5-dk-UoK"/>
+        <segue reference="3Ol-3d-DoO"/>
     </inferredMetricsTieBreakers>
 </document>
