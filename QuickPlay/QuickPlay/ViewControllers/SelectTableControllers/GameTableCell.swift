@@ -13,5 +13,6 @@ class GameTableCell: UITableViewCell {
     @IBOutlet weak var gameNameLabel:UILabel!
     
     override func awakeFromNib() {
+        super.awakeFromNib()
     }
 }

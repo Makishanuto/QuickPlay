@@ -10,7 +10,18 @@ import Foundation
 import UIKit
 
 class LeagueEdit: UIViewController {
+    
+    @IBOutlet weak var summonerTextField: UITextField!
+    @IBOutlet weak var continueButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @IBAction func finishedEditing(_ sender: Any) {
+        if summonerTextField.text?.isEmpty ?? true {
+            continueButton.isEnabled = false
+        }
+        else {
+            continueButton.isEnabled = true
+        }
     }
 }

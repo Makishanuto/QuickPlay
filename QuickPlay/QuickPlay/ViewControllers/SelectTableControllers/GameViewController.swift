@@ -13,7 +13,12 @@ class GameViewController:UIViewController {
     var gameName:String?
     var gameInformation:String?
     
+    @IBOutlet weak var gameNameLabel: UILabel!
+    @IBOutlet weak var gameDescriptionLabel: UILabel!
+    
     override func viewDidLoad() {
+            gameNameLabel.text = gameName!
+            gameDescriptionLabel.text = gameInformation!
         super.viewDidLoad()
     }
 }

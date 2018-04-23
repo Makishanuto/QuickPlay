@@ -12,9 +12,10 @@ import CoreData
 class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var viewContext: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext!
-    var gameList = [Games]()
     
+    var gameList = [Games]()
     @IBOutlet weak var gameTable: UITableView!
+    
     func getCount() -> Int { // Used to initialize rows
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Games")
         gameList = try! managedObjectContext.fetch(fetch) as! [Games]
@@ -31,8 +32,8 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
             fatalError("Not sure what just happened.")
         }
         
-        let chosenCity = gameList[indexPath.row]
-        picked.gameNameLabel.text = chosenCity.gameName // Initialize table cells to preexisting models
+        let chosenGame = gameList[indexPath.row]
+        picked.gameNameLabel.text = chosenGame.gameName // Initialize table cells to preexisting models
         return picked
     }
     
@@ -40,6 +41,7 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let ent = NSEntityDescription.entity(forEntityName: "Games", in: managedObjectContext)
         let newItem = Games(entity: ent!, insertInto: self.managedObjectContext)
         newItem.gameName = name
+        newItem.gameInformation = "A fighting game for the masses. Everyone loves this game, and it's the reason why this app was created."
         do {
             try managedObjectContext.save()
         } catch {} // Admit defeat if there's an error
@@ -62,6 +64,9 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     override func viewDidLoad() {
+        gameTable.delegate = self
+        gameTable.dataSource = self
+        
         super.viewDidLoad()
         if getCount() < 1  {
             insertObject(name: "Smash Brothers")
@@ -69,8 +74,30 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "gameView" {
-            
+            let picked:IndexPath = self.gameTable.indexPath(for:sender as! UITableViewCell)!
+            let chosenGame:Games? = gameList[picked.row]
+            print(chosenGame)
+            print(chosenGame?.gameName)
+            if let gameView = segue.destination as? GameViewController {
+                gameView.gameName = chosenGame?.gameName
+                gameView.gameInformation = chosenGame?.gameInformation
+            }
         }
     }
-
+    @IBAction func rewindFromAddView(segue: UIStoryboardSegue) {
+        if let previousView = segue.source as? AddViewController {
+            let name = previousView.gameNameInput.text
+            let description = previousView.gameDescriptionInput.text
+            let ent = NSEntityDescription.entity(forEntityName: "Games", in: self.managedObjectContext)
+            let newItem = Games(entity: ent!, insertInto: self.managedObjectContext)
+            newItem.gameName = name
+            newItem.gameInformation = description
+        }
+        gameTable.reloadData()
+        do {
+            try self.managedObjectContext.save()
+        } catch { }
+    }
+    @IBAction func cancelAddView(segue: UIStoryboardSegue) { }
+    @IBAction func rewindFromGameView(segue:UIStoryboardSegue) { }
 }
