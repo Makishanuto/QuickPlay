@@ -11,6 +11,7 @@
 		0F98FEB5208E10D4005EB347 /* GameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98FEB4208E10D4005EB347 /* GameTableCell.swift */; };
 		0FC6661D208C748F00F19AD9 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661C208C748F00F19AD9 /* userModel.swift */; };
 		0FC6661F208C758400F19AD9 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661E208C758400F19AD9 /* Games.swift */; };
+		200D1188208EA8E500A717EE /* holderPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 200D1187208EA8E400A717EE /* holderPic.png */; };
 		20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037512F206F45BB002CEF7D /* AppDelegate.swift */; };
 		20375132206F45BB002CEF7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20375131206F45BB002CEF7D /* ViewController.swift */; };
 		20375135206F45BB002CEF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20375133206F45BB002CEF7D /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		0F98FEB4208E10D4005EB347 /* GameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableCell.swift; sourceTree = "<group>"; };
 		0FC6661C208C748F00F19AD9 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		0FC6661E208C758400F19AD9 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		200D1187208EA8E400A717EE /* holderPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = holderPic.png; path = QuickPlay/Assets/holderPic.png; sourceTree = SOURCE_ROOT; };
 		2037512C206F45BB002CEF7D /* QuickPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2037512F206F45BB002CEF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20375131206F45BB002CEF7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				20375148206F4849002CEF7D /* NierSelect.png */,
+				200D1187208EA8E400A717EE /* holderPic.png */,
 				2048C6C7206F54E00073A447 /* NierMaps.png */,
 				2048C6C5206F54E00073A447 /* NierProfile.png */,
 				2048C6C6206F54E00073A447 /* NierQueue.png */,
@@ -279,6 +282,7 @@
 				0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */,
 				2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */,
 				2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */,
+				200D1188208EA8E500A717EE /* holderPic.png in Resources */,
 				2037513A206F45BB002CEF7D /* Assets.xcassets in Resources */,
 				2048C6C9206F54E00073A447 /* NierQueue.png in Resources */,
 				20375135206F45BB002CEF7D /* Main.storyboard in Resources */,

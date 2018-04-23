@@ -510,6 +510,13 @@
                                 <rect key="frame" x="50" y="107" width="52" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-od-Zgg">
+                                <rect key="frame" x="161" y="142" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-M8-ZlA">
                                 <rect key="frame" x="70" y="258" width="161" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -523,6 +530,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pTy-Qf-mbj"/>
                     </view>
+                    <connections>
+                        <outlet property="bioLabel" destination="iS3-12-eja" id="qFY-zp-bnL"/>
+                        <outlet property="nameLabel" destination="WH6-Vz-zJ0" id="E3d-R1-Tlo"/>
+                        <outlet property="profileImage" destination="bxD-CQ-a28" id="kcn-MD-RxV"/>
+                        <outlet property="rankLabel" destination="CE3-od-Zgg" id="dmg-8c-Tqb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C39-8G-QZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -813,7 +826,7 @@
         <image name="NierSelect.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XFH-Qj-19V"/>
+        <segue reference="nRD-VU-gBH"/>
         <segue reference="NuF-ud-xXs"/>
         <segue reference="xU5-dk-UoK"/>
         <segue reference="naH-Zi-VRK"/>
