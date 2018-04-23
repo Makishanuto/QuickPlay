@@ -14,8 +14,11 @@ class ProfileViewController: UIViewController {
     
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var viewContext: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext!
+    var riotApiKey = apiKey().getApiKey()
+    var userArray = [UserModel]()
+    var userObject:UserModel? = nil
     
-    @IBAction func returnFromSave(segue:UIStoryboardSegue) {
+    @IBAction func returnFromSaveProfile(segue:UIStoryboardSegue) {
         if segue.identifier == "NameEdit" {
             
         }
@@ -29,7 +32,15 @@ class ProfileViewController: UIViewController {
             
         }
     }
+    @IBAction func returnFromCancelProfile(segue:UIStoryboardSegue) { }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "UserObject")
+        userArray = try! managedObjectContext.fetch(fetch) as! [UserModel]
+        if(userArray.count != 0) {
+            userObject = userArray[0] // userObject is first item in array
+            
+        }
     }
 }

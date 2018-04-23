@@ -34,6 +34,7 @@
 		209E655A208D4C9300ADBEB5 /* BioEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E6559208D4C9300ADBEB5 /* BioEdit.swift */; };
 		209E655D208D4DE500ADBEB5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E655C208D4DE500ADBEB5 /* AddViewController.swift */; };
 		209E655F208D4DF300ADBEB5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E655E208D4DF300ADBEB5 /* GameViewController.swift */; };
+		20ABC8E7208D7907006C9BAC /* apiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABC8E6208D7907006C9BAC /* apiKey.swift */; };
 		20E81AF5208BED4700C72A19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E81AF4208BED4700C72A19 /* Info.plist */; };
 		2BE341ED4DDDE00A74ADECA4 /* Pods_QuickPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		209E6559208D4C9300ADBEB5 /* BioEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioEdit.swift; sourceTree = "<group>"; };
 		209E655C208D4DE500ADBEB5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		209E655E208D4DF300ADBEB5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		20ABC8E6208D7907006C9BAC /* apiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiKey.swift; sourceTree = "<group>"; };
 		20E81AF4208BED4700C72A19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				0FC6661C208C748F00F19AD9 /* userModel.swift */,
 				2037512F206F45BB002CEF7D /* AppDelegate.swift */,
 				0FC6661E208C758400F19AD9 /* Games.swift */,
+				20ABC8E6208D7907006C9BAC /* apiKey.swift */,
 				20375133206F45BB002CEF7D /* Main.storyboard */,
 				2037513B206F45BC002CEF7D /* LaunchScreen.storyboard */,
 				20E81AF4208BED4700C72A19 /* Info.plist */,
@@ -401,6 +404,7 @@
 				20375150206F4ABA002CEF7D /* ProfileViewController.swift in Sources */,
 				20375138206F45BB002CEF7D /* QuickPlay.xcdatamodeld in Sources */,
 				209E6554208D4AB800ADBEB5 /* LeagueEdit.swift in Sources */,
+				20ABC8E7208D7907006C9BAC /* apiKey.swift in Sources */,
 				209E655F208D4DF300ADBEB5 /* GameViewController.swift in Sources */,
 				20375153206F4AEE002CEF7D /* SelectViewController.swift in Sources */,
 				20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */,
