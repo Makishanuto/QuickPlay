@@ -31,29 +31,46 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Back to MAP" id="Ydl-kP-Ee5"/>
+                                    <barButtonItem title="Back to MAP" id="Ydl-kP-Ee5">
+                                        <connections>
+                                            <segue destination="bhD-Uq-SRl" kind="unwind" unwindAction="returnFromCancelWithSegue:" id="ast-T4-Vgb"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="228" style="plain" systemItem="fixedSpace" id="y21-U4-qZ9"/>
-                                    <barButtonItem title="Save" id="wmA-Vw-ndV"/>
+                                    <barButtonItem title="Save" id="wmA-Vw-ndV">
+                                        <connections>
+                                            <segue destination="bhD-Uq-SRl" kind="unwind" unwindAction="returnFromSegueSaveWithSegue:" id="7Gk-h1-Tbu"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-SJ-Dum">
-                                <rect key="frame" x="20" y="44" width="320" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expected Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-SJ-Dum">
+                                <rect key="frame" x="20" y="64" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-at-LAh">
-                                <rect key="frame" x="349" y="44" width="44" height="30"/>
+                                <rect key="frame" x="348" y="64" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="kk9-8B-CX2" eventType="touchUpInside" id="p85-bf-gFR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LiC-rr-e8D"/>
                     </view>
+                    <connections>
+                        <outlet property="localSearch" destination="rh9-SJ-Dum" id="b00-kZ-FZn"/>
+                        <outlet property="mapView" destination="ZUD-ga-jfG" id="FYn-mP-Y2v"/>
+                        <outlet property="saveButton" destination="wmA-Vw-ndV" id="93g-eI-0KY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeO-2N-wdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bhD-Uq-SRl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1518.840579710145" y="498.91304347826093"/>
         </scene>
@@ -65,13 +82,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Coordinates here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haB-8E-BHk">
-                                <rect key="frame" x="162" y="212" width="186" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NierMaps.png" translatesAutoresizingMaskIntoConstraints="NO" id="my7-7E-IqC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwp-gu-mNW">
                                 <rect key="frame" x="233" y="7" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -104,18 +118,99 @@
                                     <segue destination="2rf-lx-HtJ" kind="presentation" id="au9-Tw-NWB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NierMaps.png" translatesAutoresizingMaskIntoConstraints="NO" id="my7-7E-IqC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="insert place name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP2-SY-Jhd">
+                                <rect key="frame" x="27" y="354" width="186" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The nearest location is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-o3-WDj">
+                                <rect key="frame" x="27" y="333" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Coordinates here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haB-8E-BHk">
+                                <rect key="frame" x="27" y="375" width="356" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="coordinateLabel" destination="haB-8E-BHk" id="kkE-Hd-2Dj"/>
+                        <outlet property="placeNameLabel" destination="GP2-SY-Jhd" id="me0-JP-8Zv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="499"/>
+            <point key="canvasLocation" x="785.50724637681162" y="498.91304347826093"/>
+        </scene>
+        <!--Name Edit-->
+        <scene sceneID="27z-nw-31y">
+            <objects>
+                <viewController id="lF6-2e-aPn" customClass="NameEdit" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8a-rx-wtN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="22e-Yh-jdS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Qi-bz-Ywi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1345" y="1511"/>
+        </scene>
+        <!--Picture Edit-->
+        <scene sceneID="2pF-n7-xkc">
+            <objects>
+                <viewController id="jp9-3G-OQm" customClass="PictureEdit" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4d2-LD-PeP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cia-ND-p7j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfi-uJ-JaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="1511"/>
+        </scene>
+        <!--Bio Edit-->
+        <scene sceneID="Dqc-xu-KF5">
+            <objects>
+                <viewController id="Wpg-Q2-f4a" customClass="BioEdit" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iau-OV-kYp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="M3i-uL-c5h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWx-rc-9Oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1345" y="2217"/>
+        </scene>
+        <!--League Edit-->
+        <scene sceneID="bO6-Te-aLM">
+            <objects>
+                <viewController id="M0Y-1l-sHE" customClass="LeagueEdit" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="15f-iA-Ddh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wbl-vf-2eg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLS-W0-kn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="2217"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QBC-pG-eMF">
@@ -148,12 +243,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
                                 <state key="normal" title="Change profile picture."/>
+                                <connections>
+                                    <segue destination="lF6-2e-aPn" kind="presentation" id="3eo-Eh-5Tu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-M8-ZlA">
                                 <rect key="frame" x="65" y="220" width="161" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
                                 <state key="normal" title="Change profile name."/>
+                                <connections>
+                                    <segue destination="jp9-3G-OQm" kind="presentation" id="qcJ-r4-fzc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-Lb-Zcw">
                                 <rect key="frame" x="110" y="109" width="70" height="21"/>
@@ -174,12 +275,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
                                 <state key="normal" title="Change biography."/>
+                                <connections>
+                                    <segue destination="Wpg-Q2-f4a" kind="presentation" id="E54-56-yN5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rc-Is-73e">
                                 <rect key="frame" x="56" y="284" width="161" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="14"/>
                                 <state key="normal" title="Change username."/>
+                                <connections>
+                                    <segue destination="M0Y-1l-sHE" kind="presentation" id="eUF-TX-LDt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RANK:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-h9-QRE">
                                 <rect key="frame" x="110" y="142" width="70" height="21"/>
@@ -251,17 +358,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB5-hi-vDJ">
-                                <rect key="frame" x="145" y="-9" width="60" height="59"/>
+                                <rect key="frame" x="138" y="-10" width="68" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PROFILE"/>
+                                <state key="normal" title="PROFILE">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="2rf-lx-HtJ" kind="presentation" id="xU5-dk-UoK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3o-fd-3dK">
-                                <rect key="frame" x="34" y="5" width="71" height="30"/>
+                                <rect key="frame" x="34" y="5" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MAP"/>
+                                <state key="normal" title="MAP">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="3Ol-3d-DoO"/>
                                 </connections>
@@ -270,11 +381,6 @@
                                 <rect key="frame" x="45" y="93" width="336" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aRY-IZ-2Gn">
-                                    <rect key="frame" x="0.0" y="72" width="336" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Add a Game"/>
-                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lSd-dS-wY7">
                                         <rect key="frame" x="0.0" y="28" width="336" height="44"/>
@@ -292,13 +398,33 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1cd-Ih-gaF" kind="presentation" id="Yry-nH-jlq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-eg-X2S">
-                                <rect key="frame" x="321" y="-19" width="51" height="78"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g3-vf-vKV">
+                                <rect key="frame" x="288" y="492" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="QUEUE"/>
+                                <state key="normal" title="Add a Game"/>
+                                <connections>
+                                    <segue destination="fIW-Fy-a48" kind="presentation" id="h0P-uU-qkV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is there a game you would like to play that hasn't been added yet?!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3b-N6-LdS">
+                                <rect key="frame" x="40" y="430" width="347" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SCEPS3RodinLATIN-Regular" family="SCE-PS3 Rodin LATIN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-eg-X2S">
+                                <rect key="frame" x="310" y="-20" width="79" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="QUEUE">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Wy6-v9-h7U" kind="presentation" id="cws-mF-jV3"/>
                                 </connections>
@@ -310,7 +436,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSz-wW-h4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="1223"/>
+            <point key="canvasLocation" x="785.50724637681162" y="1222.8260869565217"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="8jd-Wf-iuo">
+            <objects>
+                <viewController id="fIW-Fy-a48" customClass="AddViewController" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzx-12-2tQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="obM-hj-QJg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpj-uq-7Bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="1154"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="6TS-Tb-65v">
+            <objects>
+                <viewController id="1cd-Ih-gaF" customClass="GameViewController" customModule="QuickPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hri-50-0XQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tXF-jh-fVF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTH-Jr-pN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="1832"/>
         </scene>
         <!--Queue View Controller-->
         <scene sceneID="GWh-SG-TAZ">
@@ -355,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPx-o4-deE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="1223"/>
+            <point key="canvasLocation" x="2261" y="949"/>
         </scene>
     </scenes>
     <resources>
@@ -365,9 +521,9 @@
         <image name="NierSelect.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cws-mF-jV3"/>
-        <segue reference="GnS-p3-oZ4"/>
-        <segue reference="xU5-dk-UoK"/>
+        <segue reference="O0Q-BQ-6Le"/>
+        <segue reference="kvh-Vb-BoY"/>
+        <segue reference="au9-Tw-NWB"/>
         <segue reference="3Ol-3d-DoO"/>
     </inferredMetricsTieBreakers>
 </document>

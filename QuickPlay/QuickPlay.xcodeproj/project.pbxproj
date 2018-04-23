@@ -28,7 +28,12 @@
 		2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */; };
 		2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CB206F554C0073A447 /* SCE-PS3-RD-I-LATIN.TTF */; };
 		2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */; };
-		20E81AF3208BECCB00C72A19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81AF2208BECCB00C72A19 /* LoginViewController.swift */; };
+		209E6554208D4AB800ADBEB5 /* LeagueEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E6553208D4AB800ADBEB5 /* LeagueEdit.swift */; };
+		209E6556208D4AD700ADBEB5 /* PIctureEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E6555208D4AD700ADBEB5 /* PIctureEdit.swift */; };
+		209E6558208D4BA100ADBEB5 /* NameEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E6557208D4BA100ADBEB5 /* NameEdit.swift */; };
+		209E655A208D4C9300ADBEB5 /* BioEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E6559208D4C9300ADBEB5 /* BioEdit.swift */; };
+		209E655D208D4DE500ADBEB5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E655C208D4DE500ADBEB5 /* AddViewController.swift */; };
+		209E655F208D4DF300ADBEB5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E655E208D4DF300ADBEB5 /* GameViewController.swift */; };
 		20E81AF5208BED4700C72A19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E81AF4208BED4700C72A19 /* Info.plist */; };
 		2BE341ED4DDDE00A74ADECA4 /* Pods_QuickPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2EA3233632241A3098EC33 /* Pods_QuickPlay.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +61,12 @@
 		2048C6CC206F554D0073A447 /* SCE-PS3-RD-R-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-R-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CD206F554D0073A447 /* SCE-PS3-RD-BI-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-BI-LATIN.TTF"; sourceTree = "<group>"; };
 		2048C6CE206F554E0073A447 /* SCE-PS3-RD-B-LATIN.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SCE-PS3-RD-B-LATIN.TTF"; sourceTree = "<group>"; };
-		20E81AF2208BECCB00C72A19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		209E6553208D4AB800ADBEB5 /* LeagueEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEdit.swift; sourceTree = "<group>"; };
+		209E6555208D4AD700ADBEB5 /* PIctureEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIctureEdit.swift; sourceTree = "<group>"; };
+		209E6557208D4BA100ADBEB5 /* NameEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEdit.swift; sourceTree = "<group>"; };
+		209E6559208D4C9300ADBEB5 /* BioEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioEdit.swift; sourceTree = "<group>"; };
+		209E655C208D4DE500ADBEB5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		209E655E208D4DF300ADBEB5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		20E81AF4208BED4700C72A19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88743D1FB24461B3B0E6768 /* Pods-QuickPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		CC9D2427C09D9DBF4A63ED75 /* Pods-QuickPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPlay/Pods-QuickPlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 				20E81AF4208BED4700C72A19 /* Info.plist */,
 				0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */,
 				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
+				20375156206F4BAC002CEF7D /* Fonts */,
 				20375157206F4BBA002CEF7D /* Assets */,
 			);
 			path = QuickPlay;
@@ -124,8 +135,9 @@
 		20375151206F4AC0002CEF7D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				209E655B208D4DC600ADBEB5 /* SelectTableControllers */,
+				209E6552208D4AA600ADBEB5 /* ProfileEdits */,
 				20375131206F45BB002CEF7D /* ViewController.swift */,
-				20E81AF2208BECCB00C72A19 /* LoginViewController.swift */,
 				2037514F206F4ABA002CEF7D /* ProfileViewController.swift */,
 				2037514D206F4A9D002CEF7D /* MapScreenViewController.swift */,
 				20375152206F4AEE002CEF7D /* SelectViewController.swift */,
@@ -149,10 +161,29 @@
 			isa = PBXGroup;
 			children = (
 				20375144206F4833002CEF7D /* Temporary Assets */,
-				20375156206F4BAC002CEF7D /* Fonts */,
 				20375139206F45BB002CEF7D /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		209E6552208D4AA600ADBEB5 /* ProfileEdits */ = {
+			isa = PBXGroup;
+			children = (
+				209E6557208D4BA100ADBEB5 /* NameEdit.swift */,
+				209E6555208D4AD700ADBEB5 /* PIctureEdit.swift */,
+				209E6559208D4C9300ADBEB5 /* BioEdit.swift */,
+				209E6553208D4AB800ADBEB5 /* LeagueEdit.swift */,
+			);
+			path = ProfileEdits;
+			sourceTree = "<group>";
+		};
+		209E655B208D4DC600ADBEB5 /* SelectTableControllers */ = {
+			isa = PBXGroup;
+			children = (
+				209E655C208D4DE500ADBEB5 /* AddViewController.swift */,
+				209E655E208D4DF300ADBEB5 /* GameViewController.swift */,
+			);
+			path = SelectTableControllers;
 			sourceTree = "<group>";
 		};
 		291F9746D8703DD27340495C /* Frameworks */ = {
@@ -360,16 +391,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209E6558208D4BA100ADBEB5 /* NameEdit.swift in Sources */,
+				209E6556208D4AD700ADBEB5 /* PIctureEdit.swift in Sources */,
+				209E655D208D4DE500ADBEB5 /* AddViewController.swift in Sources */,
 				20375132206F45BB002CEF7D /* ViewController.swift in Sources */,
 				2037514E206F4A9D002CEF7D /* MapScreenViewController.swift in Sources */,
 				20375155206F4AF7002CEF7D /* QueueViewController.swift in Sources */,
 				0FC6661F208C758400F19AD9 /* Games.swift in Sources */,
 				20375150206F4ABA002CEF7D /* ProfileViewController.swift in Sources */,
-				20E81AF3208BECCB00C72A19 /* LoginViewController.swift in Sources */,
 				20375138206F45BB002CEF7D /* QuickPlay.xcdatamodeld in Sources */,
+				209E6554208D4AB800ADBEB5 /* LeagueEdit.swift in Sources */,
+				209E655F208D4DF300ADBEB5 /* GameViewController.swift in Sources */,
 				20375153206F4AEE002CEF7D /* SelectViewController.swift in Sources */,
 				20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */,
 				0FC6661D208C748F00F19AD9 /* userModel.swift in Sources */,
+				209E655A208D4C9300ADBEB5 /* BioEdit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
