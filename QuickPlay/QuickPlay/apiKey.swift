@@ -9,7 +9,7 @@
 import Foundation
 
 public class apiKey {
-    var apiKey:String = "RGAPI-52b4a496-f02a-42bc-b835-337b2cabd9dc"
+    var apiKey:String = "RGAPI-cc5d215b-c3f9-4114-95a1-1f9b72501280"
     func getApiKey() -> String {
         return apiKey
     }

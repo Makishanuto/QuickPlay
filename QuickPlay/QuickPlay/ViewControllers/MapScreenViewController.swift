@@ -29,7 +29,9 @@ class MapScreenViewController: UIViewController, MKMapViewDelegate {
         saveButton.isEnabled = false
     }
     
-    func getDirectory() {
+    
+    @IBAction func searchAction(_ sender: Any) {
+        
         let geoCoder = CLGeocoder()
         let cityString = localSearch.text!
         geoCoder.geocodeAddressString(cityString, completionHandler:
@@ -49,32 +51,31 @@ class MapScreenViewController: UIViewController, MKMapViewDelegate {
                     cityAnnotation.title = placemark.locality
                     cityAnnotation.subtitle = placemark.subLocality
                     self.mapView.addAnnotation(cityAnnotation)
+                    
+                }
+                let localRequest = MKLocalSearchRequest()
+                localRequest.naturalLanguageQuery = "game store"
+                localRequest.region = self.mapView.region
+                let startSearch = MKLocalSearch(request: localRequest)
+                startSearch.start { response, _ in
+                    guard let response = response else {
+                        return
+                    }
+                    let matches: [MKMapItem] = response.mapItems
+                    for match in matches {
+                        let results = MKPointAnnotation()
+                        results.coordinate = match.placemark.location!.coordinate
+                        results.title = match.name
+                        results.subtitle = match.placemark.subLocality
+                        self.mapView.addAnnotation(results)
+                        self.nearestGameStoreCoordinate = results.coordinate
+                        self.nearestGameStoreName = results.title
+                        self.saveButton.isEnabled = true;
+                    }
                 }
         })
-    }
-    
-    @IBAction func searchAction(_ sender: Any) {
-        getDirectory()
-        let localRequest = MKLocalSearchRequest()
-        localRequest.naturalLanguageQuery = "game store"
-        localRequest.region = mapView.region
-        let startSearch = MKLocalSearch(request: localRequest)
-        startSearch.start { response, _ in
-            guard let response = response else {
-                return
-            }
-            let matches: [MKMapItem] = response.mapItems
-            for match in matches {
-                let results = MKPointAnnotation()
-                results.coordinate = match.placemark.location!.coordinate
-                results.title = match.name
-                results.subtitle = match.placemark.subLocality
-                self.mapView.addAnnotation(results)
-                self.nearestGameStoreCoordinate = results.coordinate
-                self.nearestGameStoreName = results.title
-                self.saveButton.isEnabled = true;
-            }
-        }
+        
+       
     }
     
 }

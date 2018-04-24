@@ -15,4 +15,5 @@ extension UserModel {
     @NSManaged public var userName:String?
     @NSManaged public var userDescription:String?
     @NSManaged public var userPicture:Data?
+    @NSManaged public var userSummoner:String?
 }

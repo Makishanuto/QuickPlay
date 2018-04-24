@@ -27,8 +27,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     func verifyCoordinates() {
         if(coordinateAvailable) {
-            longitudeString = "\(nearestGameStoreCoordinate!.longitude)"
-            latitudeString = "\(nearestGameStoreCoordinate!.latitude)"
+            longitudeString = String(format: "%.2f", (nearestGameStoreCoordinate?.longitude)!)
+            latitudeString = String(format: "%.2f", (nearestGameStoreCoordinate?.latitude)!)
             placeNameLabel.text = nearestGameStoreName!
             coordinateLabel.text = "COORDINATES: [\(longitudeString!), \(latitudeString!)]"
         }
