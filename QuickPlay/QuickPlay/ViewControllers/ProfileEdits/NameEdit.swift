@@ -19,6 +19,7 @@ class NameEdit: UIViewController {
     }
     
     @IBAction func finishedEditing(_ sender: Any) {
+        view.endEditing(true)
         if nameTextField.text?.isEmpty ?? true {
             continueButton.isEnabled = false
         }

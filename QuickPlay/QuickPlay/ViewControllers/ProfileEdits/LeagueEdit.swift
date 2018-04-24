@@ -17,6 +17,7 @@ class LeagueEdit: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func finishedEditing(_ sender: Any) {
+        view.endEditing(true)
         if summonerTextField.text?.isEmpty ?? true {
             continueButton.isEnabled = false
         }

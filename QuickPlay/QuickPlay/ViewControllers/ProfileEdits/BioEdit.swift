@@ -18,6 +18,7 @@ class BioEdit: UIViewController {
     }
     
     @IBAction func finishedEditing(_ sender: Any) {
+        view.endEditing(true)
         if bioTextField.text?.isEmpty ?? true {
             continueButton.isEnabled = false
         }

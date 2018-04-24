@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */; };
 		0F98FEB5208E10D4005EB347 /* GameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98FEB4208E10D4005EB347 /* GameTableCell.swift */; };
+		0FC51222208ED958008B837A /* NierEditScreens.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5121C208ED957008B837A /* NierEditScreens.png */; };
+		0FC51223208ED958008B837A /* NierSelectEditScreens.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5121D208ED957008B837A /* NierSelectEditScreens.png */; };
+		0FC51224208ED958008B837A /* NierImagePicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5121E208ED957008B837A /* NierImagePicker.png */; };
+		0FC51225208ED958008B837A /* NierSelectFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5121F208ED957008B837A /* NierSelectFinal.png */; };
+		0FC51226208ED958008B837A /* NierProfileFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC51220208ED957008B837A /* NierProfileFinal.png */; };
+		0FC51227208ED958008B837A /* NierMapsFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC51221208ED957008B837A /* NierMapsFinal.png */; };
 		0FC6661D208C748F00F19AD9 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661C208C748F00F19AD9 /* userModel.swift */; };
 		0FC6661F208C758400F19AD9 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6661E208C758400F19AD9 /* Games.swift */; };
+		0FD5D3A9208ED37600279C6A /* Final Assets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD5D3A8208ED37600279C6A /* Final Assets */; };
 		200D1188208EA8E500A717EE /* holderPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 200D1187208EA8E400A717EE /* holderPic.png */; };
 		20375130206F45BB002CEF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2037512F206F45BB002CEF7D /* AppDelegate.swift */; };
 		20375132206F45BB002CEF7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20375131206F45BB002CEF7D /* ViewController.swift */; };
@@ -44,8 +51,15 @@
 /* Begin PBXFileReference section */
 		0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QuickPlay/Assets/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0F98FEB4208E10D4005EB347 /* GameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableCell.swift; sourceTree = "<group>"; };
+		0FC5121C208ED957008B837A /* NierEditScreens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierEditScreens.png; path = "QuickPlay/Assets/Final Assets/NierEditScreens.png"; sourceTree = SOURCE_ROOT; };
+		0FC5121D208ED957008B837A /* NierSelectEditScreens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierSelectEditScreens.png; path = "QuickPlay/Assets/Final Assets/NierSelectEditScreens.png"; sourceTree = SOURCE_ROOT; };
+		0FC5121E208ED957008B837A /* NierImagePicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierImagePicker.png; path = "QuickPlay/Assets/Final Assets/NierImagePicker.png"; sourceTree = SOURCE_ROOT; };
+		0FC5121F208ED957008B837A /* NierSelectFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierSelectFinal.png; path = "QuickPlay/Assets/Final Assets/NierSelectFinal.png"; sourceTree = SOURCE_ROOT; };
+		0FC51220208ED957008B837A /* NierProfileFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierProfileFinal.png; path = "QuickPlay/Assets/Final Assets/NierProfileFinal.png"; sourceTree = SOURCE_ROOT; };
+		0FC51221208ED957008B837A /* NierMapsFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NierMapsFinal.png; path = "QuickPlay/Assets/Final Assets/NierMapsFinal.png"; sourceTree = SOURCE_ROOT; };
 		0FC6661C208C748F00F19AD9 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		0FC6661E208C758400F19AD9 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		0FD5D3A8208ED37600279C6A /* Final Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Final Assets"; path = "Assets/Final Assets"; sourceTree = "<group>"; };
 		200D1187208EA8E400A717EE /* holderPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = holderPic.png; path = QuickPlay/Assets/holderPic.png; sourceTree = SOURCE_ROOT; };
 		2037512C206F45BB002CEF7D /* QuickPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2037512F206F45BB002CEF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +105,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC5121B208ED945008B837A /* FinalImage */ = {
+			isa = PBXGroup;
+			children = (
+				0FC5121C208ED957008B837A /* NierEditScreens.png */,
+				0FC5121E208ED957008B837A /* NierImagePicker.png */,
+				0FC51221208ED957008B837A /* NierMapsFinal.png */,
+				0FC51220208ED957008B837A /* NierProfileFinal.png */,
+				0FC5121D208ED957008B837A /* NierSelectEditScreens.png */,
+				0FC5121F208ED957008B837A /* NierSelectFinal.png */,
+			);
+			path = FinalImage;
+			sourceTree = "<group>";
+		};
 		20375123206F45BB002CEF7D = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +146,11 @@
 				20ABC8E6208D7907006C9BAC /* apiKey.swift */,
 				20375133206F45BB002CEF7D /* Main.storyboard */,
 				2037513B206F45BC002CEF7D /* LaunchScreen.storyboard */,
+				0FC5121B208ED945008B837A /* FinalImage */,
 				20E81AF4208BED4700C72A19 /* Info.plist */,
 				0F01D72B208BC02A00F5A7F8 /* GoogleService-Info.plist */,
 				20375136206F45BB002CEF7D /* QuickPlay.xcdatamodeld */,
+				0FD5D3A8208ED37600279C6A /* Final Assets */,
 				20375156206F4BAC002CEF7D /* Fonts */,
 				20375157206F4BBA002CEF7D /* Assets */,
 			);
@@ -275,17 +304,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				2037513D206F45BC002CEF7D /* LaunchScreen.storyboard in Resources */,
+				0FC51225208ED958008B837A /* NierSelectFinal.png in Resources */,
 				2048C6CA206F54E00073A447 /* NierMaps.png in Resources */,
+				0FC51223208ED958008B837A /* NierSelectEditScreens.png in Resources */,
+				0FC51226208ED958008B837A /* NierProfileFinal.png in Resources */,
 				2048C6D1206F55500073A447 /* SCE-PS3-RD-I-LATIN.TTF in Resources */,
 				2037514C206F4849002CEF7D /* NierSelect.png in Resources */,
 				2048C6C8206F54E00073A447 /* NierProfile.png in Resources */,
+				0FC51227208ED958008B837A /* NierMapsFinal.png in Resources */,
 				0F01D72C208BC02A00F5A7F8 /* GoogleService-Info.plist in Resources */,
 				2048C6D0206F55500073A447 /* SCE-PS3-RD-BI-LATIN.TTF in Resources */,
 				2048C6D2206F55500073A447 /* SCE-PS3-RD-R-LATIN.TTF in Resources */,
+				0FC51224208ED958008B837A /* NierImagePicker.png in Resources */,
 				200D1188208EA8E500A717EE /* holderPic.png in Resources */,
 				2037513A206F45BB002CEF7D /* Assets.xcassets in Resources */,
 				2048C6C9206F54E00073A447 /* NierQueue.png in Resources */,
 				20375135206F45BB002CEF7D /* Main.storyboard in Resources */,
+				0FD5D3A9208ED37600279C6A /* Final Assets in Resources */,
+				0FC51222208ED958008B837A /* NierEditScreens.png in Resources */,
 				2048C6CF206F55500073A447 /* SCE-PS3-RD-B-LATIN.TTF in Resources */,
 				20E81AF5208BED4700C72A19 /* Info.plist in Resources */,
 			);

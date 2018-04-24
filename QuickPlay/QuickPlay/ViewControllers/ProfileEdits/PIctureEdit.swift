@@ -8,11 +8,21 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class PictureEdit:ViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var viewContext: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext!
+    
     override func viewDidLoad() {
         imagePick.delegate = self
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "UserModel")
+        let userArray = try! managedObjectContext.fetch(fetch) as! [UserModel]
+        if(userArray.count != 0) {
+            profileImage.image = UIImage(data:userArray[0].userPicture! as! Data)
+        }
         super.viewDidLoad()
+        
     }
     
     @IBOutlet weak var profileImage: UIImageView!
