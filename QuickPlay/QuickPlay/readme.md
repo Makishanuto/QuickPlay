@@ -1,4 +1,4 @@
-# QuickPlay
+#QuickPlay
 
 Welcome to QuickPlay! A project that attempts to "matchmake" two players to play games that typically don't have actual multiplayer!
 
