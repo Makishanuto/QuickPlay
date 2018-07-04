@@ -588,7 +588,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-od-Zgg">
-                                <rect key="frame" x="161" y="142" width="25" height="21"/>
+                                <rect key="frame" x="161" y="142" width="291" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -928,9 +928,9 @@
         <image name="NierSelectFinal.png" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O0Q-BQ-6Le"/>
-        <segue reference="GnS-p3-oZ4"/>
+        <segue reference="nRD-VU-gBH"/>
+        <segue reference="NuF-ud-xXs"/>
         <segue reference="7PM-R5-cfm"/>
-        <segue reference="ewC-aN-pVR"/>
+        <segue reference="naH-Zi-VRK"/>
     </inferredMetricsTieBreakers>
 </document>

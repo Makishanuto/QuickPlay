@@ -70,11 +70,11 @@ class ProfileViewController: UIViewController {
         
         let urlAsString = "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/\(leagueName)?api_key=\(riotApiKey)"
         print(urlAsString)
-        let url = URL(string: urlAsString)!
+        let url = URL(string: urlAsString)
         let urlSession = URLSession.shared
         
         
-        let jsonQuery = urlSession.dataTask(with: url, completionHandler: { data, response, error -> Void in
+        let jsonQuery = urlSession.dataTask(with: url!, completionHandler: { data, response, error -> Void in
             if (error != nil) {
                 print(error!.localizedDescription)
             }
